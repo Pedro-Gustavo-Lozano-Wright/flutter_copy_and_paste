@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Widgets/lista_de_opciones.dart';
+import '../Widgets/lista_de_opciones.dart';
 /// widget, nombre de imagen, txto de codigo
 List<List<dynamic>> list = [
   [null, "saltar_pantalla",codigo_saltar_pantalla],

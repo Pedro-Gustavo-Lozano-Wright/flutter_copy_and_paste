@@ -1,3 +1,5 @@
+String listaDeOpciones =
+"""
 import 'package:flutter/material.dart';
 
 Widget listaDeOpciones(){
@@ -66,4 +68,4 @@ Widget listaDeOpciones(){
       ),
     ),
   );
-}
+}""";

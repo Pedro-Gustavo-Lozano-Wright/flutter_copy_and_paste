@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+String pestanaEmergente =
+"""import 'package:flutter/material.dart';
 
 class PestanasEmergente extends StatefulWidget {
   @override
@@ -74,3 +75,4 @@ Future openPestanasEmergente(BuildContext context) {
   );
 }
 
+""";

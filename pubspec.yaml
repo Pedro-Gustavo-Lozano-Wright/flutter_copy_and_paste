@@ -57,12 +57,25 @@ flutter:
   # like this:
   assets:
     - images/saltar_pantalla.png
-    - images/t_mensaje_rapido.png
     - images/menu_inferior.png
-    - images/pestalla_emergente.png
-    - images/pestalla_emergente_compacta.png
     - images/sub_lista_desplegable.png
-
+    - images/saltar_pantalla.png
+    - images/mensaje_snack.png
+    - images/pestalla_emergente_compacta.png
+    - images/pestalla_emergente.png
+    - images/menu_de_opciones_desplegable.png
+    - images/sub_lista_desplegable.png
+    - images/enviar_info_a_widget_padre.png
+    - images/wid_edit_a_b_c.png
+    - images/wid_edit_tag_preference.png
+    - images/wid_find_word.png
+    - images/show_alert_dialog.png
+    - images/wid_show_word.png
+    - images/distribucion.png
+    - images/gestures.png
+    - images/redimencion_de_imagen.png
+    - images/shared_preferences.png
+    - images/padre_a_hijo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

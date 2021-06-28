@@ -1,5 +1,7 @@
+
+String sub_lista_desplegable =
+"""
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 Widget sub_lista_desplegable() {
   return Container(
@@ -131,3 +133,4 @@ class _sub_botonState extends State<sub_boton> {
             }));
   }
 }
+""";

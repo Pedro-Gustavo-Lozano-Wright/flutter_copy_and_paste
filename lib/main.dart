@@ -1,7 +1,14 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:flutter_copy_and_paste/Widgets/wid_edit_a_b_c.dart';
 
-import 'Columnas/columna1.dart';
+import 'Widgets/dialogos.dart';
+import 'Widgets/distribucion.dart';
+import 'Widgets/hijo_a_padre.dart';
+import 'Widgets/padre_a_hijo.dart';
+import 'Widgets/redimencion_de_imagen.dart';
+import 'lista.dart';
+import 'widget_modelo.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,12 +19,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Catalago',
+      title: 'Flutter copy and paste',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: MyHomePage(title: 'Flutter Catalago'),
+      home: MyHomePage(title: 'Flutter copy and paste'),
     );
   }
 }
@@ -34,27 +41,42 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double int_width = width / 60;
+    int max_de_iconos = int_width.round();
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(4),
-        child: Center(
-          child: Container(
-            width: 58,
-            child: Center(
-                child: columna1(),/*ElevatedButton(
-              child: Text("a"),
-              onPressed: () {
-                //openRecipeFoodSheet(context);
-                //PestanaEmergenteCompacta(context);
-              },
-            )*/ //columna1()),//listaDeOpciones()//
-                ),
-          ),
+        appBar: AppBar(
+          title: Text(widget.title),
         ),
-      )
+        body: Container(
+          padding: EdgeInsets.all(4),
+          child: Center(
+            child: Container(
+              // width: 58,
+              child: Center(
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => NaviGetData()),);}, child: Text("f")),
+                    Container(
+                        child: GridView.count(
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          crossAxisCount: max_de_iconos,
+                          children: List.generate(list.length, (id) {  //ListView.builder(
+                            // itemCount: list.length,
+                            // itemBuilder: (BuildContext ctxt, int id) {
+                            return cube(widIn: list[id][0], patImg: list[id][1], copyPst: list[id][2],);
+                            //cube(null, "t_mensaje_rapido", copyPst:"porta papeles", );
+                          }
+                          ),
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        )
     );
   }
 }
@@ -107,10 +129,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/saltar_pantalla.png
-    - images/t_mensaje_rapido.png
-    - images/menu_inferior.png
-    - images/pestalla_emergente.png
+    - images/mensaje_snack.png
     - images/pestalla_emergente_compacta.png
+    - images/pestalla_emergente.png
+    - images/menu_de_opciones_desplegable.png
     - images/sub_lista_desplegable.png
   #   - images/a_dot_ham.jpeg
 

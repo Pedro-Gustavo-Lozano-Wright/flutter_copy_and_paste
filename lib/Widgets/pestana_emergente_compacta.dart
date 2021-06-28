@@ -1,3 +1,5 @@
+String pestanaEmergenteCompacta =
+"""
 import 'package:flutter/material.dart';
 
 Future PestanaEmergenteCompacta(BuildContext context) {
@@ -123,3 +125,4 @@ Future PestanaEmergenteCompacta(BuildContext context) {
     },
   );
 }
+""";
