@@ -76,6 +76,8 @@ flutter:
     - images/redimencion_de_imagen.png
     - images/shared_preferences.png
     - images/padre_a_hijo.png
+    - images/info_de_regreso_en_pantalla.png
+    - images/boton_regreso_ios.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

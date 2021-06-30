@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_copy_and_paste/Widgets/wid_edit_a_b_c.dart';
 
+import 'Widgets/boton_de_regreso_en_menu.dart';
 import 'Widgets/dialogos.dart';
 import 'Widgets/distribucion.dart';
 import 'Widgets/hijo_a_padre.dart';
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Center(
                 child: Column(
                   children: [
-                    ElevatedButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => NaviGetData()),);}, child: Text("f")),
+                    //ElevatedButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => pantalla()),);}, child: Text("f")),
                     Container(
                         child: GridView.count(
                           shrinkWrap: true,

@@ -1,3 +1,4 @@
+String info_de_regreso_en_pantalla = """
 import 'package:flutter/material.dart';
 
 class NaviGetData extends StatefulWidget {
@@ -27,7 +28,7 @@ class _NaviGetDataState extends State<NaviGetData> {
   receiveData(BuildContext context) async {
     String result = await Navigator.push(
         context, MaterialPageRoute(builder: (context) => NaviReturnData()));
-    print("Received Data: $result");
+    print("Received Data: " + result);
   }
 }
 
@@ -43,3 +44,4 @@ class NaviReturnData extends StatelessWidget {
     );
   }
 }
+""";

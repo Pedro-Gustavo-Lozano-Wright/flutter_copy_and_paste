@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'Widgets/boton_de_regreso_en_menu.dart';
 import 'Widgets/dialogos.dart';
 import 'Widgets/distribucion.dart';
 import 'Widgets/gestures.dart';
+import 'Widgets/hijo_a_padre.dart';
 import 'Widgets/lista_de_opciones.dart';
 import 'Widgets/padre_a_hijo.dart';
 import 'Widgets/pestana_emergente.dart';
@@ -32,6 +34,8 @@ List<List<dynamic>> list = [
   [null, "redimencion_de_imagen", redimencion_de_imagen],
   [null, "shared_preferences", shared_preferences],
   [null, "padre_a_hijo", padre_a_hijo],
+  [null, "info_de_regreso_en_pantalla", info_de_regreso_en_pantalla],
+  [null, "boton_regreso_ios", boton_regreso_ios],
 
   //[Container(child: Icon(Icons.brightness_1,color: Colors.red,)), "","color" ],
 ];
